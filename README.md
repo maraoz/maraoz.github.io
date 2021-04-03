@@ -13,7 +13,7 @@ My personal site
 >      2019-02-11-digital-life-es.md
 >      2019-02-11-digital-life-zh.md
 
-2. Add language type into the renamed blog posts. If you open a blog you can see 
+2. Add language type into the renamed blog posts. If you open a blog, you can see following code let at the top of page.
 
     
 >     ---
@@ -26,6 +26,7 @@ My personal site
 >     ---
 >     layout: post
 >     title:  "Designing Digital Life and Death"
+>     ...
 >     lang: LANGULAGE_CODE
 >     ---  
 
