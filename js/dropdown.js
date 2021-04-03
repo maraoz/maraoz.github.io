@@ -15,9 +15,15 @@ $(document).ready(function(){
       var lang = $(container).attr('lang');
       var url = $(container).attr('post-url');
 
-      var lang_pattern = '-'+lang+'/$';
+      var lang_pattern;
+      if(lang=="en"){
+        lang_pattern = '/$';
+      }
+      else{
+        lang_pattern = '-'+lang+'/$';
+      } 
       var lang_exp = new RegExp(lang_pattern);
-      var url_en = url.replace(lang_exp, '-en/');
+      var url_en = url.replace(lang_exp, '/');
       var url_es = url.replace(lang_exp, '-es/');
       var url_zh = url.replace(lang_exp, '-zh/');
       var menu_id = 'language-menu-'+index;

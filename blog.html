@@ -7,7 +7,7 @@ layout: default
 
   <ul class="post-list">
     {% for post in site.posts %}
-      {% if post.lang=="en" %}
+      {% if post.lang != "es" and post.lang != "zh" %}
         <li>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
